@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   phpfpm:
-    image: modestcoders/php:7.1-fpm
+    image: ebolution/php:7.2-fpm
     volumes: &appvolumes
       - sockdata:/sock
       - ../.composer:/var/www/.composer:delegated
@@ -13,6 +13,7 @@ services:
     depends_on:
       - db
       - elasticsearch
+      - mailhog
 
   nginx:
     image: modestcoders/nginx:1.13
@@ -44,6 +45,13 @@ services:
 
   elasticsearch:
     image: modestcoders/elasticsearch:6.5
+  
+  mailhog:
+    image: mailhog/mailhog:latest
+    restart: always
+    ports:
+      - 1025:1025
+      - 8025:8025
 
 volumes:
   dbdata:

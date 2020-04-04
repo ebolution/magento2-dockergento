@@ -6,10 +6,15 @@ and this project adheres to [Semantic Version](http://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 ### Added
+ - Now can add project name (-COMPOSER_FILE_NAME env var) via project properties.
 
 ### Changed
 
 ### Fixed
+
+## [4.1.0] - 2020-03-15
+### Added
+ * Added support for php 7.3
 
 ## [4.0.1] - 2019-11-22
 ### Fixed

@@ -6,11 +6,27 @@ and this project adheres to [Semantic Version](http://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 ### Added
- - Now can add project name (-COMPOSER_FILE_NAME env var) via project properties.
 
 ### Changed
 
 ### Fixed
+
+## [4.4.0] - 2021-01-04
+### Added
+  * Added documentation about install command including elasticsearch setup.
+  * Added support for XDebug >= 3.
+
+## [4.3.0] - 2020-10-18
+### Added
+  * Image added php:7.4-fpm for compatibility with Magento versions >= 2.4
+### Fixed
+  * Increased fastcgi_buffer_size to 32K. This will fix Magento 2.4 max buffer size error.
+
+## [4.2.0] - 2020-05-16
+### Added
+ * Now can add project name (-COMPOSER_FILE_NAME env var) via project properties.
+ * Created .editorconfig file with basic coding style rules.
+ * Now you can choose between Magento: Commerce or Open Source when creating a project.
 
 ## [4.1.0] - 2020-03-15
 ### Added
